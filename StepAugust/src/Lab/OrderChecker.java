@@ -18,13 +18,16 @@ public class OrderChecker {
 		
 		
 			
-		if (washers < (bolts * 2))
-			System.out.println("Check the order : Too few washers.");//prints this if there are too few washers
+		if (washers < (bolts *2) && (nuts< bolts))
+			System.out.println("Check the order: Too few nuts and too few washers");//prints this message if there are too few washers and nuts
+		
+		else if (washers < (bolts * 2)){
+			System.out.println("Check the order : Too few washers.");}//prints this if there are too few washers
 		
 		
 		else if (nuts < bolts){
-			System.out.println("Check the order: Too few nuts.");}
-			
+			System.out.println("Check the order: Too few nuts.");}//prints this if there are too few nuts
+		
 		else
 			System.out.println("Check the order : Order is good.");//if the order is good, the program prints this message
 				
