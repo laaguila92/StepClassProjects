@@ -9,15 +9,15 @@ public class GuessingGame {
 		double guess;
 		Scanner input = new Scanner (System.in); //create scanner
 		Random answer = new Random ();
-		int n=answer.nextInt(10);
+		int n = answer.nextInt(10);
+	
 		
-		for(int i=0; i<3; i++)
+		
+		for (int i=0; i<3; i++)
 	
 		{
-			System.out.println("I'm Thinking of a number between 1 and 10. Guess if you dare.");
+			System.out.println("I'm Thinking of a number between 1 and 10. You have but 3 guesses. Try if you dare.");
 		    guess= input.nextDouble();
-		    {if ((i==3))
-		    break;
 		    
 		    if ((n==guess)){
 			System.out.println("......Correct. You have bested me. However I do not take losses lightly. I shall prepare the next gauntlet");
@@ -29,17 +29,20 @@ public class GuessingGame {
 	    	else if ((n==guess -1) || (n==guess +1))
 	    	System.out.println("You're getting closer. I concede the  fact that you are not a complete moron.");
 	    	
-	    	else 
+	    	else
 	    	System.out.println("WRONG!!!!Holy Crap I didn't think it was possible for anyone to be this cold. You must be a special type of stupid.");
-    
-		   
-		    }		   
+		    if (i==2 && guess != n){
+		    	System.out.println("Holy crap you are a complete moron. You have ran out of guesses and lost your privelige to play my game.");
+		    }
+		    
+		    }		 
+		
+		
 		    }
 		
-		System.out.println("You are by far the stupidest human i have ever come across. The correct answer is : " + n);
-	    }
 	
 }
+
 		
 
 
