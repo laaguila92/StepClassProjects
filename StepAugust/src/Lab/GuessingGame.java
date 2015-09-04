@@ -10,7 +10,7 @@ public class GuessingGame {
 		Scanner input = new Scanner (System.in); //create scanner
 		Random answer = new Random ();
 		int n = answer.nextInt(10);
-		//System.out.println(n);//this is for the purpose of testing the game
+		//System.out.println(n);//this is for the purpose of testing and making sure the game runs properly
 		
 		
 		for (int i=0; i<3; i++)
