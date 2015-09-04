@@ -16,17 +16,20 @@ public class OrderChecker {
 		System.out.println("Enter number of washers");//ask user number of washers
 		washers = input.nextInt();//user inputs washers
 		
-		if (nuts >= bolts && washers >= (bolts *2));{
+		
+			
+		if (washers < (bolts * 2))
+			System.out.println("Check the order : Too few washers.");//prints this if there are too few washers
+		
+		
+		else if (nuts < bolts){
+			System.out.println("Check the order: Too few nuts.");}
+			
+		else
 			System.out.println("Check the order : Order is good.");//if the order is good, the program prints this message
-		}
+				
 		
-		if (nuts < bolts);{
-			System.out.println("Check the order : Too few nuts.");//prints this if there are too few nuts
-		}
 		
-		if (washers < (bolts * 2));{
-			System.out.println(" Chech the order : Too few washers.");//prints this if there are too few washers
-		}
 		
 		
 		int total_cost = ((bolts * 5) + (nuts * 3) + (washers * 1));//formula for the cost of washers, nuts, and bolts in cents
