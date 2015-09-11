@@ -3,7 +3,6 @@ Created on Sep 11, 2015
 
 @author: Admin
 '''
-import os
 def main():
     for x in range (5):
         n = int(input("Input the number of days in the month (28-31) : "))
