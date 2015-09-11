@@ -6,8 +6,11 @@ Created on Sep 11, 2015
 def main():
     for x in range (5):
         n = int(input("Input the number of days in the month (28-31) : "))
-        d = int(input("Input the starting day (0=Sun, 1=Mon, ......) : "))
-        print("\n")
+        while n>31 or n<28:
+            print("Please enter a number between 28 and 31")
+            n = int(input("Input the number of days in the month (28-31) : "))
+        else:
+            d = int(input("Input the starting day (0=Sun, 1=Mon, ......) : "))
         for j in range (d) :
             print ("  ", end= " ")
             i = 1
