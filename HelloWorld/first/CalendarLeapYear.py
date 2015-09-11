@@ -8,16 +8,17 @@ def main():
     check = y%4
     check2 = y%100
     check3 = y%400
-    if check != 0 :
-        print("Not a Leap Year")
+    if (check == 0 and check2 == 0 and check3 ==0) :
+        print("Leap Year")
     else:
-        if check2 != 0 :
+        if (check == 0 and check2 == 0 and check3 != 0) :
             print("Not a Leap Year")
         else:
-            if check3 == 0 :
+            if (check ==0 and check2 !=0 and check3 !=0) :
                 print("Leap Year")
             else:
-                print("Not a Leap Year")
-        
+                if check !=0 :
+                    print("Not a leap Year")
+       
     
 main()     
